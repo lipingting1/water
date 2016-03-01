@@ -27,7 +27,7 @@ void ParaPage(uint8_t chMode)							//参数修改页面
 	case 1:	LCD_Display_String(48,60,"液",ADDPART1,NORMAL,NORMAL);
 			LCD_Display_String(64,112,"体积:",ADDPART1,NORMAL,NORMAL);
 			LCD_Display_String(136,112,"ml",ADDPART1,NORMAL,NORMAL);
-			if(9<SystemPara.Volume) Read_EEprom(System_ram,(uint8_t *)&SystemPara.BKG_ALL,54,14); //  999	 999
+			if(9999<SystemPara.Volume) Read_EEprom(System_ram,(uint8_t *)&SystemPara.BKG_ALL,54,14); //  999	 999
 			chParaNum=sprintf(ParaBuffer,"%04d",SystemPara.Volume);
 			LCD_Display_String(104,112,ParaBuffer,ADDPART1,NORMAL,NORMAL); 
 			Xpos=104;Ypos=112;
@@ -37,7 +37,7 @@ void ParaPage(uint8_t chMode)							//参数修改页面
 			LCD_Display_String(64,132,"体积:",ADDPART1,NORMAL,NORMAL); 
 			LCD_Display_String(136,112,"g",ADDPART1,NORMAL,NORMAL);
 			LCD_Display_String(136,132,"ml",ADDPART1,NORMAL,NORMAL);
-			if(9<SystemPara.Quality) Read_EEprom(System_ram,(uint8_t *)&SystemPara.BKG_ALL,54,14);
+			if(9999<SystemPara.Quality) Read_EEprom(System_ram,(uint8_t *)&SystemPara.BKG_ALL,54,14);
 			if(9999<SystemPara.Volume)	Read_EEprom(System_ram,(uint8_t *)&SystemPara.Volume,68,2);
 			chParaNum=sprintf(ParaBuffer,"%04d%c%04d",SystemPara.Quality,0x0d,SystemPara.Volume);
 			LCD_Display_String(104,112,ParaBuffer,ADDPART1,NORMAL,NORMAL); 
@@ -134,7 +134,7 @@ void ParPagUpd(uint8_t chKey,uint8_t chMode)			//参数修改操做处理      0x41		KEY
 			case 1:										 //液体
 			case 2: if(0==(SystemPara.MeaState&(1<<4))){						 //固体
 						StartMes();
-						if(2==chMode){(uint16_t *)piPtr=&SystemPara.Quality;}
+						if(2==chMode){(uint16_t *)piPtr=&SystemPara.Volume;}
 						else{(uint16_t *)piPtr=&SystemPara.Volume;}
 						for(i=0,j=0;i<chParaNum;i++,j++){
 							if(ParaBuffer[i] == 0x0d){
@@ -150,7 +150,7 @@ void ParPagUpd(uint8_t chKey,uint8_t chMode)			//参数修改操做处理      0x41		KEY
 ////							Write_EEprom(System_ram,(uint8_t *)&Para[4],70,8);
 //							Read_EEprom(System_ram,(uint8_t *)&SystemPara.Quality,66,8);
 //						}
-						Write_EEprom(System_ram,(uint8_t *)&SystemPara.Quality,16,8);
+						Write_EEprom(System_ram,(uint8_t *)&SystemPara.Volume,16,4);
 						MeasureProPage(Get_MeaMode(),1);	
 					}else MeasureBusyPage();
 					break;
@@ -160,6 +160,7 @@ void ParPagUpd(uint8_t chKey,uint8_t chMode)			//参数修改操做处理      0x41		KEY
 					}else{
 						(float *)piPtr=&SystemPara.CalibFactor_Cs;
 					}
+					piPtrShad=(uint8_t *)piPtr;
 					for(i=0,j=0;i<chParaNum;i++,j++){
 						if((ParaBuffer[i] == 0x0d) | (ParaBuffer[i] == '/') | (ParaBuffer[i] == ':')){
 							if((&SystemPara.CalibFactor_I == (float *)piPtr) | (&SystemPara.CalibFactor_Cs == (float *)piPtr)){	 //浮点型
@@ -183,8 +184,9 @@ void ParPagUpd(uint8_t chKey,uint8_t chMode)			//参数修改操做处理      0x41		KEY
 										sscanf(DisBuffer,"%x",&SetValueBuf);
 									}
 									*(uint8_t *)piPtr=(uint8_t)SetValueBuf;
-									if((&SystemPara.SysTime[2] == (uint8_t *)piPtr) || (&SystemPara.MeasureAcc == (uint8_t *)piPtr))((uint8_t *)piPtr)++;
-									((uint8_t *)piPtr)++;		
+									if((&SystemPara.SysTime[1] == (uint8_t *)piPtr) || (&SystemPara.MeasureAcc == (uint8_t *)piPtr))((uint8_t *)piPtr)++;
+
+										((uint8_t *)piPtr)++;		
 								}
 							}
 							j=255;

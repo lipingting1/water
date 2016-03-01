@@ -443,7 +443,6 @@ void main(void)										   	//主函数
 	Show_Logo(48 ,80 ,ADDPART1,NORMAL);	 //显示字符串 
 	SystemPara.MeaState=0;
 	InterfaceInit();   //初始化。。。主界面显示	  SystemPara.History.Record[0][0]
-	BUZZER=0;
 	while(1)
 	{
 //		sprintf(DisBuffer,"/%d/%d",(uint16_t)chPage,(uint16_t)SystemPara.MTime);	//  /%d/%d/%d/

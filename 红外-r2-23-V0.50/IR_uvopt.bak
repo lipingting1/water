@@ -139,6 +139,21 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
+          <LineNumber>112</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>HisRecord.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
+        <Bp>
+          <Number>1</Number>
+          <Type>0</Type>
           <LineNumber>421</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
@@ -152,7 +167,7 @@
           <Expression></Expression>
         </Bp>
         <Bp>
-          <Number>1</Number>
+          <Number>2</Number>
           <Type>0</Type>
           <LineNumber>5</LineNumber>
           <EnabledFlag>1</EnabledFlag>
@@ -167,7 +182,7 @@
           <Expression></Expression>
         </Bp>
         <Bp>
-          <Number>2</Number>
+          <Number>3</Number>
           <Type>0</Type>
           <LineNumber>44</LineNumber>
           <EnabledFlag>1</EnabledFlag>
@@ -182,7 +197,7 @@
           <Expression></Expression>
         </Bp>
         <Bp>
-          <Number>3</Number>
+          <Number>4</Number>
           <Type>0</Type>
           <LineNumber>185</LineNumber>
           <EnabledFlag>1</EnabledFlag>
@@ -197,7 +212,7 @@
           <Expression>\MAIN\184</Expression>
         </Bp>
         <Bp>
-          <Number>4</Number>
+          <Number>5</Number>
           <Type>0</Type>
           <LineNumber>517</LineNumber>
           <EnabledFlag>1</EnabledFlag>
@@ -212,7 +227,7 @@
           <Expression>\MAIN\517</Expression>
         </Bp>
         <Bp>
-          <Number>5</Number>
+          <Number>6</Number>
           <Type>0</Type>
           <LineNumber>526</LineNumber>
           <EnabledFlag>1</EnabledFlag>
@@ -318,10 +333,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>47</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>22</TopLine>
-      <CurrentLine>22</CurrentLine>
+      <TopLine>76</TopLine>
+      <CurrentLine>80</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\user\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -360,10 +375,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>82</ColumnNumber>
+      <ColumnNumber>61</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>13</TopLine>
-      <CurrentLine>29</CurrentLine>
+      <TopLine>25</TopLine>
+      <CurrentLine>25</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\user\parament\SetPara.c</PathWithFileName>
       <FilenameWithoutPath>SetPara.c</FilenameWithoutPath>
@@ -381,10 +396,10 @@
       <FileType>1</FileType>
       <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>6</ColumnNumber>
+      <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>0</TopLine>
-      <CurrentLine>0</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>24</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\user\file_sys\HisRecord.c</PathWithFileName>
       <FilenameWithoutPath>HisRecord.c</FilenameWithoutPath>
@@ -404,8 +419,8 @@
       <Focus>0</Focus>
       <ColumnNumber>100</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>37</TopLine>
-      <CurrentLine>37</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\user\UART\Uart.c</PathWithFileName>
       <FilenameWithoutPath>Uart.c</FilenameWithoutPath>
@@ -446,8 +461,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>200</TopLine>
-      <CurrentLine>200</CurrentLine>
+      <TopLine>0</TopLine>
+      <CurrentLine>0</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\user\DSPs\DSPs.c</PathWithFileName>
       <FilenameWithoutPath>DSPs.c</FilenameWithoutPath>
@@ -476,9 +491,9 @@
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>C:\Users\Administrator\Desktop\新建文件夹\1程序修改\红外-r2-23-V0.50\USER\I2C\EEPROM.H</PathWithFilename>
+    <PathWithFilename>C:\Users\Administrator\Desktop\新建文件夹\1程序修改\红外-r3-1-V0.52\user\file_sys\app_cfg.h</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>5</CurrentLine>
+    <CurrentLine>14</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -505,32 +520,6 @@
     <PathWithFilename>C:\Users\Administrator\Desktop\新建文件夹\1程序修改\红外-r2-23-V0.50\user\app_cfg.h</PathWithFilename>
     <TopLine>88</TopLine>
     <CurrentLine>102</CurrentLine>
-    <Constant>0</Constant>
-    <WindowPosition>
-      <length>0</length>
-      <flags>0</flags>
-      <showCmd>0</showCmd>
-      <MinPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MinPosition>
-      <MaxPosition>
-        <xPos>0</xPos>
-        <yPos>0</yPos>
-      </MaxPosition>
-      <NormalPosition>
-        <Top>0</Top>
-        <Left>0</Left>
-        <Right>0</Right>
-        <Bottom>0</Bottom>
-      </NormalPosition>
-    </WindowPosition>
-  </AlienFiles>
-
-  <AlienFiles>
-    <PathWithFilename>C:\Users\Administrator\Desktop\新建文件夹\1程序修改\红外-r3-1-V0.52\user\app_cfg.h</PathWithFilename>
-    <TopLine>92</TopLine>
-    <CurrentLine>95</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1894,7 +1883,7 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>1</ActiveTab>
+      <ActiveTab>4</ActiveTab>
       <Documents>
         <Doc>
           <Name>C:\Users\Administrator\Desktop\新建文件夹\1程序修改\红外-r2-23-V0.50\user\app_cfg.h</Name>
@@ -1904,15 +1893,9 @@
         </Doc>
         <Doc>
           <Name>.\user\main.c</Name>
-          <ColumnNumber>47</ColumnNumber>
-          <TopLine>22</TopLine>
-          <CurrentLine>22</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>C:\Users\Administrator\Desktop\新建文件夹\1程序修改\红外-r2-23-V0.50\USER\I2C\EEPROM.H</Name>
-          <ColumnNumber>26</ColumnNumber>
-          <TopLine>1</TopLine>
-          <CurrentLine>5</CurrentLine>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>76</TopLine>
+          <CurrentLine>80</CurrentLine>
         </Doc>
         <Doc>
           <Name>.\user\mel\MeaPro.c</Name>
@@ -1921,16 +1904,16 @@
           <CurrentLine>47</CurrentLine>
         </Doc>
         <Doc>
-          <Name>.\user\parament\SetPara.c</Name>
-          <ColumnNumber>82</ColumnNumber>
-          <TopLine>13</TopLine>
-          <CurrentLine>29</CurrentLine>
+          <Name>.\user\file_sys\HisRecord.c</Name>
+          <ColumnNumber>0</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>24</CurrentLine>
         </Doc>
         <Doc>
-          <Name>C:\Users\Administrator\Desktop\新建文件夹\1程序修改\红外-r3-1-V0.52\user\app_cfg.h</Name>
-          <ColumnNumber>10</ColumnNumber>
-          <TopLine>92</TopLine>
-          <CurrentLine>95</CurrentLine>
+          <Name>C:\Users\Administrator\Desktop\新建文件夹\1程序修改\红外-r3-1-V0.52\user\file_sys\app_cfg.h</Name>
+          <ColumnNumber>24</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>14</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>
